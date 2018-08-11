@@ -1,0 +1,10 @@
+#!/usr/bin/python
+import re
+import sys
+
+d=re.compile(r'\d')
+l=sys.stdin.readline()
+
+
+print d.match(l)
+

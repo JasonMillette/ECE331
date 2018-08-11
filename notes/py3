@@ -1,0 +1,16 @@
+#!/usr/bin/python
+
+import sys
+
+if (len(sys.argv[1:])): #cmd line args passed
+	for (f in sys.argv[1:]):
+            try :
+                fh=open(f,"r"))
+	    except:	
+                continue:    
+                
+            for l in fh.readlines():
+			printl,
+else 
+	for l in sys.stdin.readlines():
+		printl
