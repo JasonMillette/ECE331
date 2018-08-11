@@ -1,0 +1,13 @@
+================================================
+24 lines of php max
+might need to unstall modpacks
+================================================
+stateless
+
+client -> mount
+server -> /etc/exports
+centralized login for seperate authenticating for UID
+dont export to the world
+================================================
+naming devices in dev
+

@@ -1,0 +1,18 @@
+================================================================================
+perl
+3 types
+scalar -> $
+list -> @
+hashes -> %
+no type of string
+() optional in function calls
+$~bind
+chomp and trim
+die on error
+$s{$x[6])=1;
+shell key value 1
+man perl func | data
+# comment
+================================================================================
+php7 x.php -> to debug
+

@@ -1,0 +1,12 @@
+#!/usr/bin/python
+
+import re
+import sys
+
+d=re.compile(r"^([01][0-9])|([2][2-4]):([0-5][0-9])|([6][0]):([0-5][0-9])|([6][0])$")
+for l in sys.stdin.readlines():
+	print l.strip(),
+	if d.match(l) == None:
+		print " Failed"
+	else:
+		print " Pass"

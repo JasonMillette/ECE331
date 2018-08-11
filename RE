@@ -1,0 +1,29 @@
+===============================================
+PYTHON RE
+\s whitespace
+\S non whitespace
+\t tab
+\d digit
+\D non digit
+\w aplhanumeric
+\W non alpanumeric
+. any character except \n
+^ start of line
+$ end of line
+\ escape character
++ one or more
+* 0 or more
+? 0 or 1
+{m,n} at least m but no more than n
+() grouping
+[] character class [abc]==[a-c] [^5] != 5
+===============================================
+VIM STUFF
+s substitute
+:r file - insert file
+:%S!^!//! inserts // to everyline
+:from,tos/search/replace
+:g/search/d deletes all matches
+[range] no commas needed for any in range
+1,$ range of all lines
+===============================================

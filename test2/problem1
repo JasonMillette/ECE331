@@ -1,0 +1,4 @@
+network(DDN) IP & /13 => 10.129.4.5 & 11111111.11111000.00000000.00000000 => 10.129.0.0
+IP(DDN) 172.81.32.0/20 can be any address from 172.81.32.1 to 172.81.47.254
+Netmask(CIDR) /20 => First 20 bits are 1 the rest are 0 => 11111111 11111111 11110000 00000000 => 255.255.240.0
+Broadcast(DDN) keep first 13 bits, the rest are 1 => 00001010.10000111.11111111.11111111 => 10.135.255.255

@@ -1,0 +1,33 @@
+#!/usr/bin/python
+#siaoujdpoaljdsu
+#asdasdasd
+import wget
+import matplotlib
+import csv
+import datetime
+import matplotlib.pyplot as plt
+from datetime import datetime
+from matplotlib.dates import DateFormatter, DayLocator, HourLocator, MinuteLocator, drange
+
+
+print('Starting Download of data')
+
+url = 'http://courses.eece.maine.edu/ece331/data.csv'
+wget.download(url, '/home/jason/Documents/ECE331/Programs/python/data.csv')
+
+temperature=[]
+date=[]
+temp=[]
+
+with open ('data.csv') as datafile:
+	data=csv.reader(datafile,delimiter='	')
+	next (data)
+	for row in data:
+		temperature.append(float(row [6]))
+		date.append(temp)
+
+plt.semilogx(temperature)
+plt.ylabel('Temperature in degrees F')
+plt.xlabel('Time')
+plt.title('Temperature over time')
+plt.show()

@@ -1,0 +1,51 @@
+scanf no bounds checking
+getline or fgets checks bounds
+.cc c plus plus
+
+
+./configure  will help with programming
+
+MAKEFILE
+========================================
+stackoverflow - < 1% know MAKE
+man pages
+info pages
+info make
+gnu.org make
+
+builds programs
+
+Makefile contents
+variables
+recipies
+targets
+
+variables
+========================================
+cflags = -Wall -g       key value pair
+CC = gcc
+OBJS = main.o spi.o fir.o    list of object files
+LIBS= -lm -L. -lxy
+
+Example
+========================================
+${Targets}:${objects}
+${cc} -o ${targets} ${libs} ${libs}
+clean:
+	rm -f ${targets} ${obj}
+main.o sp.h
+spio.o sp.h
+#comments
+========================================
+
+
+recipes
+========================================
+must indent with tab
+invoke c compiler and creat executable file
+link dependencies
+
+========================================
+implicit rules
+main.o then main.s then main .c
+

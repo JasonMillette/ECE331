@@ -1,0 +1,51 @@
+===================================================================================
+any data for project 1; use write pass "string"
+kmalloc
+number of bits, then ascii buff
+y = -2x + 7
+examples in kernal source code
+===================================================================================
+EXAM 2
+kernal/locking/concurrency
+networking TCP/IP/ENET/Routing
+C
+security
+SQL/web
+py graphics
+email
+fsf
+dns
+perl
+file systems
+frame buffer
+vote on topics thursday
+===================================================================================
+TCP/UDP
+provides a way of transporting end application
+TCP - transmission control protocol
+reliable
+connection oreinted
+three way hand shake
+in order delivery, might have to wait on frame - buffer or request
+slower and complicated
+UDP - user 
+unreliable
+no connection to make
+"send it"
+no ordering
+low overhead
+network file systems(NSF) uses UDP, checks at a different layer to make it stateless
+===================================================================================
+ports
+local port then remote port
+privilaged 10-1023 no longer exist
+80 HTTP web
+22 SSH
+21 FTP
+23 TELNET
+25 SMTP
+53 DNS
+443 HTTPS
+http://google.com:8080 port
+===================================================================================
+

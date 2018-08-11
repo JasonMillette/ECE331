@@ -1,0 +1,45 @@
+atoi 
+have error checking
+string functions in c library
+
+alias in bash ls = 'ls '-F'
+make permanent by ~/.bash_profile
+
+hard link regular files and cant cross file systems
+
+symbolic links
+ln -s "existing fil" "link"
+creates new inode (new data space) larger and slower than hard links
+can cross file systems and can link directories 
+ll -i to check inodes
+cant change permission of links all default to 777
+
+make a link from c by system calls operating level. library cals are higher level. printf is a library call that uses a system call write
+creating a link is a system call. man 2 link
+
+check and respond to errors
+
+scripting
+
+ERE extended regulat expressions. perl python BASH
+ERE is not globbing. globbing is matching filename matching
+globbing is pattern matching   * ? [] ~ [^] {} ^
+grep RE glob
+
+python ERE . ^ $ * + ? {,} [] \ | ()
+. is any single char
+^ is the start of line (positional)
+$ is the endo of line (positional)
+[] is the character class works just like globbing [/d] digit class /s whitesace
+[^] same as globbing excluding
+\ escape character, makes literal ex \$ to find $
+() grouping/capture
+| alteration (or)
+* is a modifier that means 0 or more, moddifies thing before. r'x*' matches 0 or more x chars
++ is a modifier that means 1 or more, modifies the thing before r'x+' matches 1 or more x chars
+? 0 or 1 chars
+{n} exactly n times
+{n,} n or more times
+{n,m} n to m times double inclusive
+r is a python raw string
+r'^#[a-z}{4}$' a line with only 4 lower case letters starting with # ex #sean

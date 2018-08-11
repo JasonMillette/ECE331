@@ -1,0 +1,14 @@
+Jason Millette
+Homework 2
+2/10/2018
+
+1. 
+2. 
+3. mv coco skywalker
+4. cp skywalker ender
+5. wc -l /proc/cpuinfo
+6. a. chmod 101 voldemort
+   b. chmod u=r g=rw o=rwx voldemort
+7. alias grep2="grep -E"
+8. Added a script that runs on startup creating the alias script is "alias grep2='grep -E'"
+9. argv[0] is the name of the program/executable. if the name is not available argv[0] is a pointer to an argument. 

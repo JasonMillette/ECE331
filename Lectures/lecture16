@@ -1,0 +1,44 @@
+question:
+int quantum = dev->quantum. undefined
+dev == four_fsk_probe ?
+if so what is the replacement.
+=============================================================
+2nd project, get data from serial port, disable bluetooth and enable serial port
+38400 baud rate
+CGI PHP LITETTPD public face IP
+=============================================================
+security errors often come from 
+not checking return values on errors
+or checking index bounds
+stop uneeded services
+ps list services
+turn service off by systemctl stop then disable then 
+systemctl mask service will never run
+filter -> network level
+dont allow traffic to your machine
+kernal -> iptables 
+user -> TCP wrappers, ETC/ hosts.allow/deny
+monitor, UMAINE watches, 
+varlog syslog dmsg
+john the ripper to test password strength
+periodic data
+=============================================================
+dpkg --get-selections lighttpd, php, sqlite3
+lighttpd - /etc/lighttpd/conf-available.conf
+configure rpi lighttpd
+=============================================================
+SQL
+sqlite3
+.schema lists format
+select * from data where pressure >=1000;
+.quit
+to make
+sqlite3 name
+create table nameofTable (food text, air real, cash integer);
+.tables lists tables
+insert into mike values ('carrots',3.1415,-20);
+select sum(cash) from mike where cash < 0; filter
+=============================================================
+NFS
+localhost.comn
+localhost.php

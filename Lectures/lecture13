@@ -1,0 +1,46 @@
+=====================================================
+networking continued
+ehternet frame
+physical layer, connect
+=====================================================
+IP to logically organize netowrk
+group machines into logical networks
+put IP into data block of packet
+=====================================================
+ARP - adress resolution protocol
+who has IP, then IP responds back with their IP
+broadcast ARP to everyone by IP network
+to make broadcast set dest. address to 1s ie FF:FF:FF:FF:FF:FF
+=====================================================
+IP is a 32 bit number. used in dotted notation, each range is 0 to 255
+special address, 
+127.0.0.0 -> loop back
+18.0.0.0 -> MIT
+=====================================================
+netmask -> network/host part
+uses DDN as well
+binary 1s mean network binary 0s mean host
+1s to the left then 0s, no mixing
+=====================================================
+Network address ->_ IP address, network part from netmask, set host part to 0s
+broadcast IP address, network part mask, then set host part to 1s.
+broadcast and netowrk address not assignable
+=====================================================
+umaine is 130.111.218.50
+network address = IP & netmask 130.111.0.0
+broadcast address = ~NM | IP
+change broadcast /23.255.255.255.0
+130.111.218.0/23 -> barrows
+=====================================================
+subnets
+NA = 130.111.218.0/23
+BA = 130.111.219.255
+=====================================================
+routing
+machines on switch
+create ethernet frame
+ARP to get mac address with IP -> ARP does not go past router
+table of networks -> routing table
+default if IP is not on netowrk then send it to a router
+creating frame, ENET DA of router MAC, src of host MAC, data IP host, IP destination
+If IP dest does not match then the router will defualt and go to the internet

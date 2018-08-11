@@ -1,0 +1,5 @@
+<?php
+	header('content-type: image/jpg');
+	$img=shell_exec{"/usr/bin/raspistill -n -t -5000 -ex auto -o -");
+	echo $img;
+>?

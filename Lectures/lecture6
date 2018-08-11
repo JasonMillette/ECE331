@@ -1,0 +1,17 @@
+N15xx.pdf constant float
+
+gcc generates assembly source
+compiles
+links
+preprocess
+assmbles
+
+============================================================
+-Wall displays most warnings
+-g debugger flag
+gdb debugger
+-o filename
+-c compile assmeble with out link, object files
+-v verbose
+============================================================
+

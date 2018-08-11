@@ -1,0 +1,67 @@
+1.  sudo apt-get update
+	cd /usr/src
+	sudo git clone https://github.com/raspberrypi/linux.git
+	mv linux linux`uname -r`
+	make mrproper
+	sudo modprobe configs
+	cp /proc/config.gz /usr/src/linux4.9.59-v7+
+	gunzip config.gz
+	mv config.gz .config
+	cd /boot
+	sudo wget https://github.com/Hexxeh/rpi-firmware/blob/master/Module7.symver
+	cd /usr/src/linux4.9.59-v7+     
+	sudo ln -s /boot/Module7.symvers Module.symvers
+	sudo apt-get install bc
+	sudo make modules_prepare
+	cd /lib/modules/4.9.59-v7+
+	sudo ln -s /lib/modules/4.9.59-v7+ build
+	sudo ln -s build source
+2. a. 0 pass, a fail, -0 pass, +0 pass 
+   b. r"^[+-]?([0-9]+\.?[0-9]*|[0-9]*\.[0-9]+)"
+3.
+#include <stdio.h>
+#include <regex.h>
+/*
+ * Jason Millette
+ * 2/18/2018
+ * float match
+ * ECE331
+ */
+
+int main(int argc, char *argv[])
+/*
+ * increments through
+ * all arguments and
+ * tests for matches
+ * then prints results
+ */
+{
+    int match;
+    char *regularExpression = "\\b\\s*[+-]?([0-9]+\\.?[0-9]*|[0-9]*\\.[0-9]+)\\b";
+    regex_t re; 
+    if (argc < 2) {     //checks for arguments
+        printf("You must enter a test\n");
+        return 1;
+    }
+
+    for (int i = 1; i < argc; i++) {     //checks for errors
+        if (regcomp(&re, regularExpression, REG_EXTENDED) != 0) { 
+            printf("error occured\n");
+            return 2;
+        }
+
+        match = regexec(&re, argv[i],  0, NULL, 0);
+        regfree(&re);  //frees memory
+        if (!match) 
+            printf("%s -> pass\n",argv[i]);
+        else
+            printf("%s fail\n",argv[i]);
+    }
+
+    return 0;
+}
+
+4. 
+5. dpkg-query -W *[+,-,.]*[0-9] -f=''
+6. 
+7. 

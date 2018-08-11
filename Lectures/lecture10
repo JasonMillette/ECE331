@@ -1,0 +1,27 @@
+================================================
+HW6 
+buff[5/4*stringlen] for 4b5
+4 lines 4fsk 4 bits
+4 functions for fss interface gpio.c/gpio.h
+enable through fss. sys/class/gpio/Export write "4\n" in gpio4/direction | value etc.
+echo 4 > export - unexport when finished
+set value 0 or 1
+direction in/out
+set value with ex -sc 's/old/new/|x' file
+================================================
+Enable: if high read other intputs otherwise ignore
+Clock: falling edge to latch data, 1ms, then 32ms period 50% DC
+Bit0: LSB, 16ms
+Bit1: MSB, 16ms
+run number of bits required not buffer size
+fopen / fprintf() 
+================================================
+enable will float when unexport do not change
+pins 4,17,18,22,23
+================================================
+kernal module
+platfrom- add remove hard on the fly
+static scoping only visible in this file
+/dev/four_fsk - device special file. char type
+syscall- open()/write()/read()/close()/ioctl()
+

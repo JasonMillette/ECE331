@@ -1,0 +1,30 @@
+Final is in class with no networking
+========================================================
+Exam 2 home, topics
+security
+SQL/web - serial IO in c
+NFS
+DNS
+PY GTK
+perl
+========================================================
+open, close, private pointer is the way for device driver to reduce local variables, dont need. Device initialized. 
+int open called in user space fd = open(FILE, O_WRONLY | O_NONBLOCK) reference book has code almost cut and paste
+linux cross refernce
+release to return 0, already written
+========================================================
+security
+the most secure OS is BSD
+the most insecure OS is windowz
+no such thing
+
+security is a behavoir/human thing
+convienince vs security
+security comes from admins and users
+secure your system
+1. passwords spaces^set
+2. updates - subscribe to security list
+3. backup - ability to restore to before hack, amanda
+	lrk, lkrk 
+4. services - 
+	web server, ssh, dhcp, dns, telnet, rsh, tftp, steam, minecraft, quake, blockchain

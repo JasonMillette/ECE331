@@ -1,0 +1,12 @@
+#!/usr/bin/python
+
+passwd=open("/etc/passwd","r")
+wlist=passwd.read().split('\n')
+out =[]
+for i in wlist:
+    passw=i.split(':')
+    try:
+        out.append(passw.pop(6))
+    except:
+        print list(set(out))
+        quit()

@@ -1,0 +1,34 @@
+courses.eece.maine.edu/331
+2 exams 1 final can use pi
+need keyboard and mouse
+some quizs and homework and 2projecrts
+pi thermometer and kernal driver
+thermometer learn java/web server/talking with hw
+kernal driver concurrency/ scripting(automation)
+languages - perl/python/BASH
+for concurrency we will be using C
+regular expressions
+first quiz next week on c
+
+poszx standard for linux interface
+
+
+X does the graphics written in 80s 
+bell labs came up with unix, unix is trademarked kernigan and ritchie made C code
+
+tcsh or BASH shells shell is a program
+hierarchical structure root /
+touch creates a file of 0 length and changes timestamp
+globbing set of files * is all but hidden
+cd - goes bakc to previous directory
+history shows lat commands
+crtl l clears screen
+double quotes has substiution single has little no substitution.
+substitution are variables
+can have variables in shell
+env lists variables
+set list bash variables
+$USER replaces the $USER with user
+
+back quotes executes with stdout
+

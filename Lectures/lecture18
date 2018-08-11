@@ -1,0 +1,21 @@
+2 second delay after enable low
+==================================================================
+project 2
+
+local host
+documentation is pretty good
+$_POST variable for input
+take data from serial then put into SQL
+								3 lines or so
+generate json data from data. in php pull data from sql database
+
+==================================================================
+json data
+
+example in gitalb
+==================================================================
+chron
+runs jobs periodically
+crontab - global file defines waht jobs run when, located in etc
+
+==================================================================

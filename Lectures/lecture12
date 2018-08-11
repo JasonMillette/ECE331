@@ -1,0 +1,36 @@
+====================================================================
+/dev/ttyACM0
+minicom -o acm0 - 1152N81
+disable bluetooth, google
+====================================================================
+f_flags, for opening in kernal, in book
+gpiod_setvalue(gpiod struct *, [10])
+take return and check for error with copy.
+multiple ways to sleep
+locking- atomic variable, semaphores, mutex, use concurrency and race conditions from book
+ use spinlock
+pointer function needs pointer
+====================================================================
+networking
+ethernet - manchester encoding
+            4b5b
+OSI model for networking
+1. application
+2. activation, HTTP/FTP/SSH/NFS/
+3. session
+4. transport TDP, TCP, 
+5. network layer, IP - public domain, incapsulation
+6. data link, ethernet, token ring
+7. UTP, coax, wireless, fiber, pidgeon
+
+RFC, public domain
+
+ENET
+preamble, 62 bits
+start frame delimitter, 2 bits
+destination, address, 6 bytes
+source address, 6 bytes
+length/type,2 bytes minimum,  0x0800
+data, max of 1500Bytes, min of 46 Bytes
+CRC, 4bytes
+EF, pause, 96 buts

@@ -1,0 +1,18 @@
+<?php
+function Table($width, $height){
+    echo "<table border ='2'; cellspacing='0'; >"; 	#definition of table
+    $row=0;		#definition of variables
+    $column=0;
+    for($row = 0; $row < $height; $row++){		#runs through every row
+        echo "<tr>"; #starts row
+        for($column = 0; $column < $width; $column++){		
+           echo "<td align='center'>".($row+$height*$column)."</td>";   #prints the column
+        }               #aligns number to center of cell
+		
+        echo"</tr>"; 		#ends ends row
+    }
+	
+    echo "</table>";		#ends table
+}
+Table(5, 4);   #calls Table
+?>

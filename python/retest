@@ -1,0 +1,12 @@
+#!/usr/bin/python
+
+import re
+import sys
+
+d=re.compile(r"\-P\ \'less \-p\ \"\-Wtemplates \\(\"\'\ gcc")
+for l in sys.stdin.readlines():
+	print l.strip(),
+	if d.match(l) == None:
+		print " Failed"
+	else:
+		print " -> Pass"

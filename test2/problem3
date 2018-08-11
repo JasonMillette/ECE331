@@ -1,0 +1,13 @@
+Host Elessar
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+1.2.4.0         0.0.0.0         255.255.128.0   UH    2      4      2   ETH1
+10.0.0.0        0.0.0.0         255.254.0.0     U     3      0      0   ETH0
+1.2.0.0         0.0.0.0         255.255.0.0     U     1      2      1   ETH1
+0.0.0.0         1.2.4.1         0.0.0.0         UG    2      0      0   ETH1
+
+Host Legolas
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+141.114.3.0     0.0.0.0         255.255.255.192 UH    3      0      0   ETH0
+0.0.0.0         141.114.3.1     0.0.0.0         UG    0      0      0   ETH0

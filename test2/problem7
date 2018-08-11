@@ -1,0 +1,1 @@
+SELECT "date text", "time text", "price real" * FROM bitcoin WHERE "price real" = (SELECT MAX("price real") AND date('now','-30 day'));

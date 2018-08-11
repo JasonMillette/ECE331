@@ -1,0 +1,49 @@
+#!/usr/bin/pyton
+
+import sys
+import requests
+import csv
+from datetime import datetime
+import matplotlib.pyplot as plt
+from matplotlib.dates import DateFormatter, HourLocator, MinuteLocator, drange
+import datetime
+
+date=[]
+temp=[]
+
+url = 'http://courses.eece.maine.edu/ece331/data.csv'
+r = requests.get(url)
+
+with open('/home/jason/Documents/ECE331/stevensNotes','wb')as f:
+	f.write(r.content)
+
+xx = 0
+
+with open('data.csv')as csvDataFile:
+	csvreader = csv.reader(csvDataFile,delimiter='	')
+	next(csvreader)
+	for row in csvreader: 
+		temp.append(float(row[6]))
+		datet = datetime.date(2018,2,int(row[0]))
+		datet = datetime.time(int(row[1][:2]),int(row[1][3:]))
+		date.append(datet)
+		xx = xx + 1
+print(date)
+print(temp)
+w = []
+for i in range(0,xx):
+	w.append(i)
+
+fig, ax = plt.subplots()
+
+#ax.plot_dates(da,temp)
+
+date1 = date[0]
+date2 = date[xx-1]
+delta = datetime.timedelta(minutes=10)
+# = DateFormatter("%d")
+da = drange(date2,date1,delta)
+ax.plot_date(da,temp)
+ax.xaxis.set_major_formatter(DateFormatter('%d-%h'))
+
+plt.show()

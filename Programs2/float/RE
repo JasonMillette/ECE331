@@ -1,0 +1,12 @@
+#!/usr/bin/python
+
+import re
+import sys
+
+d=re.compile(r"[-+]?(\d+(\.\d*)?|\.\d+)([eE][-+]?\d+)?")
+for l in sys.stdin.readlines():
+    print l.rstrip(),
+    if d.match(l) == None:
+        print "failed"
+    else:
+        print " -> yes"

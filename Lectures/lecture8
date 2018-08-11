@@ -1,0 +1,81 @@
+homework 5
+4FSK encoding
+2 bits that generate a frequency
+center frequency is 1.5kHZ
+space by 31HZ
+clk
+enable
+keeping syncronized can be hard
+we will encode data 4b5, keeps moving on frequency allowing us to keep time
+every 4 bits(nibble) send5
+
+use array of uint8_t
+optimize memory allocate with out empty bytes
+print a string the binary. printf
+
+files
+Main.c
+encode.c
+encode.h
+Makefile
+make commits to gitlab under repo 4b5
+add sheaff as developer
+
+decode with a python script using RE
+RE grab 5 r'([01]{5})'
+use re.sub()
+       sub
+def rp(l)
+	match cases
+hash table
+test
+===========================================================
+4b5 encoding wiki is good
+'73'
+ox37 ox33
+
+0x3 -> ob10101
+0x7 -> 01111
+0x3 -> ob10101
+0x3 -> ob10101
+===========================================================
+strlen(s) * 8
+strlen(s) * 3
+allocate all bits /8 +1
+===========================================================
+exam 
+strict time start 5 mins early 5 mins late
+can use rpi no internet
+install python documentation
+C error checks no commenting
+RE
+shell -> links, commands, globs, pipes, 
+python
+permission(attributes)
+Makefile
+vim
+===========================================================
+notes packages
+apt-get 
+apt search 
+apt-get isntall xyz -> .deb 
+ddpg(dpkg?) can alter debian file name
+apt remove vs purge uninstall | removes dependencies
+dpkg-query
+dpkg-s status and info on package
+dpkg-S searching for 
+dpkg-l install status
+dpkg-L files that are part of package
+===========================================================
+processes- linux multi-user/multiprocess
+abstraction of a set of resources and of a running program
+ps user processes
+BSD or sysv
+
+keep track of
+user
+group
+memory stack and heap
+cpu time
+state
+start time

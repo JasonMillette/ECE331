@@ -1,0 +1,6 @@
+a. "Y" then "G" then "p"
+b. sed -n 432,524p /usr/local/xyzzy/theonering
+w. ln /var/lib/cache/storm four*two
+d. chmod -R go=u-rw,go+r *
+e. ps ax | grep "\s\+Ss" | wc -l
+f. sudo apt install stella

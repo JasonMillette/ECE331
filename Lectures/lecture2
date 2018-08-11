@@ -1,0 +1,39 @@
+man pages 
+1-user commands
+2-system calls
+3-library calls
+4-special files
+5-file formats
+6-games
+7-misc
+8-sys admin
+9-kernal routines not kept up to date
+
+man 3 printf specify page to find
+
+man pages for C code
+
+>> appends
+
+LD_LIBRARY_PATH search for libraries in extra places  
+
+ld.so
+
+ TCSH setenv LD_LIBRARY_PATH .  unsetenv to reomve
+
+ BASH export LD_LIBRARY_PATH=/home
+
+| takes standard out of left into the functoin on right. used iwth grep to search
+ 
+wc lines words chars
+
+awk has its own language dont use
+
+vi 
+cap G end of file
+num cap G that line
+cw change word
+/x search x
+%s substitute
+~ make uppercase
+

@@ -1,0 +1,40 @@
+========================================================================
+struct gpio_desc *gpio_enable; -makes things cleaner
+========================================================================
+user /dev/four_fsk  open/read/write/close/lock
+------------------------------------
+kernal four_fsk.ko
+
+struct fileoperations
+
+int four_fsk_open(struct inode *inode, struct file + filesomething); check for error
+
+========================================================================
+must user errno for kernal returns
+========================================================================
+data in and out of kernal
+at least three address types
+1. physical addresses 
+2. kernal addresses
+3. user addresses to kernal addresses
+must validate user address
+wrap around user space data
+cpoy to kernal space
+========================================================================
+2*31.25 bits per second
+copy_from_user(to,from,size) returns bites it copies
+
+user open()
+	write(fd,buf,42)
+	close
+kernal side
+four_fsk_write()
+{
+	copy-from_user()
+	4b5b() //encode
+	togglepins()
+
+	sleep/wake to minimize cpu time
+}
+			 user  kernal
+========================================================================

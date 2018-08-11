@@ -1,0 +1,86 @@
+1.
+CC=gcc
+CFLAGS= -g -Wall
+OBJS= titanic.o sink.o gone.o
+TARGET=boat
+
+$(TARGET):$(OBJS)
+	$(CC) -o $(TARGET) $(CFLAGS) $(OBJS)
+
+clean:
+	$(RM) boat *.0*
+
+2.
+#!/usr/bin/python
+
+passwd=open("/etc/passwd","r") #opens file
+wlist=passwd.read().split('\n') #splits into a list
+out =[] #initalize the an empty list
+for i in wlist:
+    passw=i.split(':') #splits each part of list into a new list
+    try:
+        out.append(passw.pop(6)) #takes the recently spilt list and gets the 7th segment
+    except:
+        print list(set(out)) #prints out final result
+        quit()
+
+3.
+^([01][0-9])|([2][2-4]):([0-5][0-9])|([6][0]):([0-5][0-9])|([6][0])$
+
+4.
+#include<stdio.h>
+#include<stdint.h>
+#include<unistd.h>
+#include<signal.h>
+/*
+ * Jason Millette
+ * 3/8/2018
+ * ECE331
+ */
+
+int main()
+/*
+ * creates child
+ * then sleeps forever
+ * then sends HUP
+ * then quits
+ */
+{
+	uint32_t pid;  //using uint to make it more widely supported
+	pid = fork();
+	if (pid < 0) {
+		printf("pid < 0: error\n"); //checks for error
+		return 1;
+	}
+
+	else if (pid == 0) {
+	/*
+	 * tells child to sleep
+	 * indefinitely
+	 */
+		while(1) {
+			sleep(1);
+		}
+	}
+	
+	else {
+	/*
+	 * sends HUP
+	 * to child
+	 * then returns
+	 */
+		kill(pid,SIGHUP);
+		return 0;
+	}
+}
+5.
+	a. "Y" then "G" then "p"
+	b. sed -n 432,524p /usr/local/xyzzy/theonering
+	w. ln /var/lib/cache/storm four*two
+	d. chmod -R go=u-rw,go+r *
+	e. ps ax | grep "\sSs" | wc -l
+	f. sudo apt install stella
+
+6.
+sudo apt-get install enscript
+enscript -b'ECE331|EXAM01|Jason Millette' -O test1 -o - | ps2pdf - test1.pdf

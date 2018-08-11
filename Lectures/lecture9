@@ -1,0 +1,66 @@
+journal quickly caches data
+stores data in journal then later puts on drive
+processes
+==========================================
+ps lists processes ps agxu for lots of info
+init parent of all processes always PID 1
+dpkg -S #PID get info of processes
+
+==========================================
+processes states
+S -> sleeping interuptable
+R -> running
+t -> trace
+T -> stopped
+Z -> zombie linux will kill them
+==========================================
+==========================================
+IPC  inter process communication
+4G - IA32 architecture
+1G is for kernal
+
+==========================================
+signals
+send -> kill
+default to terminating siganl
+HUP restart with new config files
+kill -L for table 
+signals get passed when there are children
+
+wait() gets PID
+==========================================
+how to make process
+fork(); duplicates itself 0 is child
+ zombies are an entry in the process table
+reaping gets PID of child, wait3()
+==========================================
+a sleeping processes is waiting for an interrupt 
+if its stopped 
+==========================================
+proc
+has info for for all processes
+==========================================
+user space with virtual address
+kernal space
+
+system call       4 at a time
+INT 0x80
+==========================================
+in kernal   modular kernal for linux
+costs time and manaf
+VFS -> virtual file system, FAT,ex72,3,4 
+devRRVS -> devices char,block,tty,sound,dev,hard drive
+MM -> memory manager
+SCHED -> scheduler schedule who gets cpu and when
+NI -> network interface
+LIB -> limited c libreary instruction set. printki();
+
+==========================================
+Kernal is resource manager
+memory cpu time
+drivers
+file systems
+
+manages for processes from user space
+
+

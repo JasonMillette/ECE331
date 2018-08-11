@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+    #open the file with the given dictionary
+    open(my $file,"<","/usr/share/dict/american-english-large") or die "$!";  
+
+    while (defined($letter = getc($file))) {        #gets the quantity of each letter and fills hash
+        $frequency{$letter}++ if $letter =~/[[:alpha:]]/;
+    }
+
+    while (my($letter, $count) = each %frequency) {     #finds max count
+        if ($max < $count) {
+            $max = $count;
+        }
+    }
+
+    #prints the letter then the correct number of * normalized to 70
+    print $_, "*" x (($frequency{$_} / $max) * 69), "\n" for sort keys %frequency;  
+
+    close $file;

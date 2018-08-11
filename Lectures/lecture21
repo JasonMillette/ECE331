@@ -1,0 +1,13 @@
+=========================================================
+context swtichs kernal to userspace and back
+have to clear registers between kernal and userspace
+=========================================================
+kernal locking on final
+=========================================================
+dokg --get-selections | grep apache
+systemctl -a | grep  -l apache
+configure ligthtdp
+/var/log/lighttpd/error.log
+
+=========================================================
+(take largest number/ number of letter) * 70
